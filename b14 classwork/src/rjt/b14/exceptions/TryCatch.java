@@ -8,14 +8,14 @@ public class TryCatch {
 		/*File file = new File("abc.txt");
 		file.createNewFile();*/
 		
-		
-		
+	int c =	add(10,20);
+		 
 		try {
 			System.out.println("opened some files and n/w connection");
 			int b[] = new int[5];
 			
-			b[5] = 10;
-			int a = 10/0; // medicine is not available
+			b[4] = 10;
+			int a = 10/c; // medicine is not available
 		} 
 		
 		
@@ -41,6 +41,11 @@ public class TryCatch {
 		System.out.println("b4 proceeding, closing files and n/w connection");
 
 		System.out.println("yang will continue with rest of the program");
+	}
+
+	private static int add(int i, int j) {
+		int a = 8+9;
+		return i+j;
 	}
 
 }
